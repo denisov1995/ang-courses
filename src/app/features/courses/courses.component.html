@@ -1,0 +1,13 @@
+<app-header></app-header>
+
+<div class="container">
+  <div *ngIf="courses.length; else info" class="wrapper">
+    <app-courses-list *ngFor="let course of courses">
+      <app-course [course]="course" [editable]="course?.editable"></app-course>
+    </app-courses-list>
+  </div>
+
+  <ng-template #info>
+    <app-info></app-info>
+  </ng-template>
+</div>

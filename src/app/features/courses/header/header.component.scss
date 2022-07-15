@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  border: 2px solid red;
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      width: 111px;
+      height: 48px;
+    }
+
+    .header-name {
+      margin-right: 30px;
+    }
+
+    .header-logout {
+      background-color: transparent;
+      border: 2px solid purple;
+      height: 30px;
+    }
+  }
+}

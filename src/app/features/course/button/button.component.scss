@@ -1,0 +1,38 @@
+:host {
+  align-self: center;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+
+  .delete-button,
+  .edit-button,
+  .show-button {
+    width: 200px;
+    height: 30px;
+    border: 2px solid purple;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .delete-button,
+  .edit-button {
+    width: 30px;
+    margin-left: 10px;
+  }
+
+  .edit-button {
+    background: url("../../../../assets/svg/edit.svg") 3px 3px no-repeat;
+    background-size: 20px;
+  }
+
+  .delete-button {
+    background: url("../../../../assets/svg/delete.svg") 4px 4px no-repeat;
+    background-size: 17px;
+  }
+
+  button:hover {
+    background-color: rgb(250 223 250);
+  }
+}
